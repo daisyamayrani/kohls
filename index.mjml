@@ -3,10 +3,29 @@
     <mj-style>
       * {
         box-sizing: border-box;
+        
+      }
+      
+      p{
+        color: #404040;
       }
 
       .red {
         color: #C70039;
+        font-weight: bold;
+      }
+
+      .decoration {
+        text-decoration: underline !important;
+        font-weight: bold;
+      }
+
+      .decoration-reg {
+        text-decoration: underline !important;
+      }
+
+      .bold-text {
+        font-size: 10px;
         font-weight: bold;
       }
 
@@ -17,12 +36,8 @@
 
 
     <mj-attributes>
-      <!-- <mj-all padding="0px"></mj-all> -->
       <mj-class name="logo" padding="0 0 0 10px"></mj-class>
-
-      <!-- <mj-class name="cta" color="#FFFFFF" font-size="13px" border-radius="3px" href="https://mjml.io" font-family="Ubuntu, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding="20px 25px"></mj-class>
-      <mj-class name="footer-text" align="center" color="#ffffff" font-family="Ubuntu, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" font-size="15px" padding="0 25px"></mj-class> -->
-      <mj-navbar-link padding="0 30px" font-size="12px"></mj-navbar-link>
+      <mj-navbar-link padding="0 30px" font-size="11px"></mj-navbar-link>
     </mj-attributes>
 
     <mj-style inline="inline">
@@ -36,54 +51,14 @@
   <mj-body background-color="grey">
 
 
-    <mj-raw>
-      <!-- Company Header -->
-    </mj-raw>
-    <mj-section padding="20px 20px 10px 20px" background-color="#FFFFFF">
-      <mj-column width="27%">
-        <mj-image mj-class="logo" align="left" src="assets/img/kohlsLogo.png" />
-      </mj-column>
-      <mj-column width="73%">
-        <mj-text align="right" font-size="11px">
-          <a href="#" style="color: #000000; text-decoration: none; padding: 10px; " font-size="12px">MY ACCOUNT</a>
-          <a href="#" style="color: #000000; text-decoration: none; padding: 10px;" font-size="12px">CUSTOMER SERVICE</a>
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <mj-raw>
-      <!-- Divider Line -->
-    </mj-raw>
-    <mj-section padding="0" background-color="white">
-      <mj-column>
-        <mj-divider border-width="1px" border-style="solid" border-color="lightgrey" />
-      </mj-column>
-    </mj-section>
-
-
-    <mj-raw>
-      <!--  Menu Header -->
-    </mj-raw>
-    <mj-section background-color="white" padding="5px">
-      <mj-column>
-        <mj-navbar base-url="https://mjml.io" hamburger="hamburger" ico-color="#444">
-          <mj-navbar-link href="https://mjml.io">FOR THE HOME</mj-navbar-link>
-          <mj-navbar-link href="https://mjml.io">WOMEN</mj-navbar-link>
-          <mj-navbar-link href="https://mjml.io">MEN</mj-navbar-link>
-          <mj-navbar-link href="https://mjml.io">KIDS</mj-navbar-link>
-          <mj-navbar-link href="https://mjml.io" color="#C70039">CLEARANCE</mj-navbar-link>
-        </mj-navbar>
-      </mj-column>
-    </mj-section>
-
-
-
+    <mj-include path="./components/header.mjml" />
 
 
     <mj-raw>
       <!-- MAIN CONTENT  -->
     </mj-raw>
-    <mj-wrapper background-color="white" padding="40px 40px 40px 40px">
+    <mj-wrapper background-color="white" padding="40px 30px 40px 30px">
+
 
       <mj-raw>
         <!-- Order Intro text -->
@@ -104,14 +79,14 @@
       <mj-raw>
         <!-- Shipping Info -->
       </mj-raw>
-      <mj-section background-color="#D3D3D3" padding="0 0 10px 0">
+      <mj-section background-color="#E7E7E7" padding="0 0 10px 0">
         <mj-column padding="25px 5px 25px 5px" width="25%">
           <mj-text font-size="11px" padding="0px" align="center" font-weight="bold">Shipping to:</mj-text>
           <mj-text font-size="11px" padding="4px 0 0 0" align="center">(2 items)</mj-text>
         </mj-column>
         <mj-column padding="25px 5px 25px 5px" width="25%">
           <mj-text font-size="11px" padding="0px" align="center" font-weight="bold">Daisy</mj-text>
-          <mj-text font-size="11px" padding="4px 0 0 0" align="center">1234 Main</mj-text>
+          <mj-text font-size="11px" padding="4px 0 0 0" align="center">1234 Main St.</mj-text>
           <mj-text font-size="11px" padding="4px 0 0 0" align="center">San Diego CA 92129</mj-text>
         </mj-column>PM
         <mj-column padding="25px 5px 25px 5px" width="25%">
@@ -140,7 +115,7 @@
           </mj-text>
           <mj-text font-size="12px" padding="3px 0 0 0" align="left">SKU: #81864088
           </mj-text>
-          <mj-text font-size="12px" padding="3px 0 0 0" align="left" font-weight="bold" color="#C70039">SALE $11.00
+          <mj-text font-size="12px" padding="3px 0 0 0" align="left" font-weight="bold" color="#C70039">SALE $11.00f
           </mj-text>
           <mj-text font-size="12px" padding="3px 0 0 0" align="left">REGULAR $22.00
           </mj-text>
@@ -152,7 +127,7 @@
       </mj-section>
 
       <mj-raw>
-        <!-- Product 1 -->
+        <!-- Product 2 -->
       </mj-raw>
       <mj-section background-color="white" padding="10px 0 30px 0">
         <mj-column width="25%">
@@ -165,7 +140,6 @@
           <mj-text font-size="12px" padding="3px 0 0 0" align="left">QTY: 1
           </mj-text>
           <mj-text font-size="12px" padding="3px 0 0 0" align="left">SKU: #75250949
-
           </mj-text>
           <mj-text font-size="12px" padding="3px 0 0 0" align="left" font-weight="bold" color="#C70039">SALE $48.74
           </mj-text>
@@ -180,18 +154,472 @@
       </mj-section>
 
 
+      <mj-include path="./components/dark-divider.mjml" />
+
+
       <mj-raw>
-        <!-- Divider Line -->
+        <!-- Order Summary-->
       </mj-raw>
-      <mj-section padding="0" background-color="white">
-        <mj-column padding="0">
-          <mj-divider padding="0" border-width="2px" border-style="solid" border-color="black" />
+      <mj-section background-color="white" padding="20px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="18px" padding="8px 0 30px 0" align="left">Order Summary
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <mj-raw>
+        <!-- Billing Address Title-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="0" align="left" font-weight="bold">Billing Address:</mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <mj-raw>
+        <!-- Billing Address Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="12px 0 0" align="left">Daisy</mj-text>
+          <mj-text font-size="12px" padding="5px 0px 0" align="left">1234 Main St.</mj-text>
+          <mj-text font-size="12px" padding="5px 0px 0" align="left">San Diego CA 92129</mj-text>
         </mj-column>
       </mj-section>
 
 
 
+
+
+      <mj-raw>
+        <!-- Payment Method Title-->
+      </mj-raw>
+      <mj-section background-color="white" padding="25px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="0" align="left" font-weight="bold">Payment Method:</mj-text>
+        </mj-column>
+      </mj-section>
+
+
+
+      <mj-raw>
+        <!-- Payment Method Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 22px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="12px 0 0" align="left">PAYPAL xxxx</mj-text>
+          <mj-text font-size="12px" padding="5px 0px 0" align="left">Payment Total:</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="12px" padding="12px 0 0" align="right">$62.00</mj-text>
+          <mj-text font-size="12px" padding="5px 0px 0" align="right">$62.00</mj-text>
+        </mj-column>
+      </mj-section>
+
+
+
+      <mj-include path="./components/light-divider.mjml" />
+
+
+      <mj-raw>
+        <!-- Subtotal Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="18px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="12px 0 0" align="left" font-weight="bold">Subtotal:</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="12px" padding="12px 0 0" align="right" font-weight="bold">$59.74</mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <mj-raw>
+        <!-- Kohls Cash Title-->
+      </mj-raw>
+      <mj-section background-color="white" padding="12px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="0" align="left" font-weight="bold">Kohl's Cash & Promos:</mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <mj-raw>
+        <!-- Kohls Cash Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="5px 0 0" align="left">HOTDEAL20</mj-text>
+          <mj-text font-size="12px" padding="5px 0px 0" align="left">Free Standard Shipping $25</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="12px" padding="5px 0 0" align="right">- $2.20</mj-text>
+          <mj-text font-size="12px" padding="5px 0px 0" align="right">- $8.95</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Shipping Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="12px 0 0" align="left" font-weight="bold">Shipping:</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="12px" padding="12px 0 0" align="right" font-weight="bold">FREE</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Taxes Title-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="12px 0 0" align="left" font-weight="bold">Taxes & Fees:</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Taxes Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 25px 0">
+        <mj-column>
+          <mj-text font-size="12px" padding="5px 0 0" align="left">Sales Tax</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="12px" padding="5px 0 0" align="right">$4.46</mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <mj-include path="./components/light-divider.mjml" />
+
+
+      <mj-raw>
+        <!-- Order Total Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="16px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="18px" padding="12px 0 0" align="left" font-weight="bold">Order Total:</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="18px" padding="12px 0 0" align="right" font-weight="bold">$62.00</mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <mj-raw>
+        <!-- Saved -->
+      </mj-raw>
+      <mj-section padding="30px 0 30px 0" background-color="white">
+        <mj-column width="100%">
+          <mj-text font-size="10px" padding="12px 0 0" align="center" font-weight="bold">You Saved<mj-text-inline class="red"> $38.40
+            </mj-text-inline>
+          </mj-text>
+          <mj-text font-size="9px" padding="3px 0 0" align="center">on your purchase today.</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Your Rewards-->
+      </mj-raw>
+      <mj-section background-color="white" padding="20px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="18px" padding="8px 0 15px 0" align="left">Your Rewards
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Kohls Cash Date Title-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="11px" padding="10px 0 0" align="left">Kohl's Cash&reg;</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Kohls Cash Date Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="11px" padding="5px 0px 0" align="left">to use Nov 29 - Dec 07, 2022</mj-text>
+          <mj-text font-size="9px" padding="5px 0px 0" align="left">Your Kohl's Cash will be sent in a separate email.</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="12px" padding="8px 0 0px 0" align="right">$15.00
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Kohls Rewards Updated Title-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="11px" padding="5px 0 0" align="left" font-weight="bold" color="#008631">Kohl's Rewards</mj-text>
+        </mj-column>
+
+      </mj-section>
+
+      <mj-raw>
+        <!-- Kohls Rewards Updated Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="11px" padding="5px 0px 0" align="left" color="#008631">Updated Balance:</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="12px" padding="5px 0 0px 0" align="right" color="#008631">$7.12
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Kohls Rewards Previous Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="11px" padding="5px 0px 0" align="left">Previous Balance +</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="12px" padding="5px 0 0px 0" align="right">$4.24
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Kohls Rewards Earned Content-->
+      </mj-raw>
+      <mj-section background-color="white" padding="0px 0 0px 0">
+        <mj-column>
+          <mj-text font-size="11px" padding="5px 0px 0" align="left">earned on this purchase</mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text font-size="12px" padding="5px 0 25px 0" align="right">$2.88
+
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <mj-include path="./components/dark-divider.mjml" />
+
+      <mj-raw>
+        <!-- Return Info -->
+      </mj-raw>
+      <mj-section padding="30px 0 30px 0" background-color="white">
+        <mj-column width="100%">
+
+          <mj-text font-size="12px" padding="3px 0 0" align="left">Please visit<a href="#" class="decoration"> kohls.com/returns</a> to learn about our hassle-free return policy. Some items, such as premium electronics, must be returned within 30 days.</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./components/dark-divider.mjml" />
+
+      <mj-raw>
+        <!--  Fan of -->
+      </mj-raw>
+      <mj-section padding="30px 0 20px 0" background-color="white">
+        <mj-column width="100%">
+
+          <mj-text font-size="20px" padding="3px 0 0" align="center" font-weight="bold">You might be a fan of these:</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- Suggested Products-->
+      </mj-raw>
+      <mj-section padding="0" background-color="white">
+        <mj-column padding="0">
+          <mj-image mj-class="logo" align="center" src="assets/img/sport.jpeg" />
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image mj-class="logo" align="center" src="assets/img/caterpillar.jpeg" />
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image mj-class="logo" align="center" src="assets/img/running.jpeg" />
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image mj-class="logo" align="center" src="assets/img/unicorn.jpeg" />
+        </mj-column>
+      </mj-section>
+
+
+
+      <mj-include path="./components/dark-divider.mjml" />
+
+      <mj-raw>
+        <!--  Help Title -->
+      </mj-raw>
+      <mj-section padding="30px 0 10px 0" background-color="white">
+        <mj-column width="100%">
+          <mj-text font-size="18px" padding="3px 0 0" align="left">Need help? No problem.</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!--  Help Links -->
+      </mj-raw>
+      <mj-section padding="10px 0 40px 0" background-color="white">
+        <mj-column width="70%">
+          <mj-text font-size="12px" padding="3px 0 0" align="left" font-weight="bold">Need help? No problem.</mj-text>
+          <mj-text font-size="12px" padding="3px 0 0" align="left"><a href="#" class="decoration-reg">How do I track my order?</a></mj-text>
+          <mj-text font-size="12px" padding="3px 0 0" align="left"><a href="#" class="decoration-reg">Can I cancel or change my order?</a></mj-text>
+          <mj-text font-size="12px" padding="3px 0 0" align="left"><a href="#" class="decoration-reg">When will my order arrive?</a></mj-text>
+          <mj-text font-size="12px" padding="3px 0 0" align="left"><a href="#" class="decoration-reg">When will I be charged?</a></mj-text>
+
+        </mj-column>
+        <mj-column width="30%">
+          <mj-text font-size="12px" padding="3px 0 0" align="left" font-weight="bold">Get more information</mj-text>
+          <mj-text font-size="12px" padding="3px 0 0" align="left"><a href="#" class="decoration-reg">Customer Service</a></mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="./components/dark-divider.mjml" />
+
+
     </mj-wrapper>
+
+    <mj-raw>
+      <!-- Footer Grey Box -->
+    </mj-raw>
+
+    <mj-wrapper background-color="#f6f6f6" padding="20px 40px 20px 40px">
+
+      <mj-raw>
+        <!-- TOP LINKS-->
+      </mj-raw>
+      <mj-section background-color="#f6f6f6" padding="10px 0 10px 0">
+        <mj-column padding="0 0 0 0" width="25%">
+          <mj-text font-size="11px" padding="0 0 0 0" align="center">
+            <a href="#" style="color: #404040; text-decoration: none; padding: 0px; ">KOHL'S CARDS</a>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 0" width="25%">
+          <mj-text font-size="11px" padding="0 0 0 0" align="center">
+            <a href="#" style="color: #404040; text-decoration: none; padding: 0px; ">CUSTOMER SERVICE</a>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 0" width="25%">
+          <mj-text font-size="11px" padding="0 0 0 0" align="center">
+            <a href="#" style="color: #404040; text-decoration: none; padding: 0px; ">FIND A STORE</a>
+          </mj-text>
+        </mj-column>
+        <mj-column padding="0 0 0 0" width="25%">
+          <mj-text font-size="11px" padding="0 0 0 0" align="center">
+            <a href="#" style="color: #404040; text-decoration: none; padding: 0px; ">KOHL'S COUPON</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <mj-raw>
+        <!-- SOCIAL LINKS-->
+      </mj-raw>
+      <mj-section background-color="#f6f6f6" padding="0px 80px 0px 80px">
+        <mj-column padding="0">
+          <mj-image width="100px" padding="25px 25px" align="center" src="assets/img/fb.png"></mj-image>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image width="100px" padding="25px 25px" align="center" src="assets/img/tw.png"></mj-image>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image width="100px" padding="25px 25px" align="center" src="assets/img/pin.png"></mj-image>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image width="100px" padding="25px 25px" align="center" src="assets/img/ins.png"></mj-image>
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image width="100px" padding="25px 25px" align="center" src="assets/img/you.png"></mj-image>
+        </mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- SOCIAL LINKS-->
+      </mj-raw>
+      <mj-section background-color="#f6f6f6" padding="0px 0px ">
+        <mj-column padding="0">
+          <mj-image width="100px" padding="0px 10px" align="right" src="assets/img/apple.jpg"></mj-image>
+
+        </mj-column>
+        <mj-column padding="0">
+          <mj-image width="100px" padding="0px 10px" align="left" src="assets/img/google.jpg"></mj-image>
+        </mj-column>
+
+      </mj-section>
+
+      <mj-raw>
+        <!-- Trademarks-->
+      </mj-raw>
+      <mj-section background-color="#f6f6f6" padding="15px 0px ">
+        <mj-column padding="0">
+          <mj-text font-size="11px" padding="3px 0 0" align="center" color="#404040">
+            Android, Google Play and the Google Play logo are trademarks of Google Inc.
+          </mj-text>
+          <mj-text font-size="11px" padding="3px 0 0" align="center" color="#404040">
+            App Store is a service mark of Apple Inc.
+          </mj-text>
+        </mj-column>
+
+      </mj-section>
+
+
+      <mj-raw>
+        <!-- Fineprint LINKS-->
+      </mj-raw>
+      <mj-section background-color="#f6f6f6" padding="15px 0px ">
+        <mj-column padding="0 0 0 0" width="45%">
+          <mj-text font-size="10px" padding="0 0 0 0" align="right" color="#404040">
+            <a href="#" style="color:#404040; text-decoration: none; padding: 0px;">SECURITY & PRIVACY POLICY</a>
+          </mj-text>
+        </mj-column>
+
+        <mj-column width="10%">
+          <mj-text font-size="10px" padding="0 0 0 0" align="center" color="#404040">
+            |
+          </mj-text>
+        </mj-column>
+
+        <mj-column padding="0 0 0 0" width="45%">
+          <mj-text font-size="10px" padding="0 0 0 0" align="left" color="#404040">
+            <a href="#" style="color:#404040; text-decoration: none; padding: 0px; ">HASSEL-FREE RETURNS POLICY</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+    </mj-wrapper>
+
+    <mj-raw>
+      <!-- Fineprint-->
+    </mj-raw>
+    <mj-section background-color="white" padding="40px 40px 40px 40px">
+      <mj-column padding="0 0 0 0">
+
+        <mj-text font-size="10px" padding="0 0 10px 0" align="left" color="#404040">
+          Kohl's Cash® redeemable in store and online Nov 29 - Dec 07, 2022.
+        </mj-text>
+
+        <mj-text font-size="10px" padding="0 0 0 0" align="left" color="#404040">
+          Kohl's Cash: Kohl’s Cash® is not legal tender. No cash back. Kohl’s Cash coupons can be earned two ways: <mj-text-inline class="bold-text">(1) EARN EVENTS: </mj-text-inline>During Kohl’s Cash earn events, customer will receive a $10 Kohl’s Cash® coupon for every $50 spent on Qualifying Purchases made in a single transaction during the stated earn window <mj-text-inline class="bold-text">(2) EVERY DAY EARN for Kohl’s Rewards™ Charge Holders & Kohl’s Rewards™ Members in the Pilot (select markets): </mj-text-inline> For a limited time, Kohl’s Rewards Charge holders will earn Kohl’s Cash at a rate of 10% of the transaction subtotal for Qualifying Purchases made with a Kohl’s Charge any time, while Kohl’s Rewards Members will earn Kohl’s Cash at a rate of 5% for purchases made with other tender types. If the earned Kohl’s Cash balance is $5 or any greater $5 increment, a Kohl’s Cash coupon will be activated and issued to the customer. If the balance is less than a $5 increment, no coupon will be issued, and the balance will carry forward to combine with future earned Kohl’s Cash if/until the incremental $5 Kohl’s Cash coupon activation threshold is met (if the balance remains below $5, it will expire 12 months after it is earned). Every Day Earn Kohl’s Cash is incremental to Kohl’s Cash earned during an Earn Event, if applicable. <mj-text-inline class="bold-text">Qualifying Purchase(s) </mj-text-inline>are calculated after all discounts are applied, before shipping, fees or tax is imposed and do not include the purchase of gift cards. <mj-text-inline class="bold-text">REDEMPTION: </mj-text-inline>Each Kohl’s Cash coupon can be redeemed only during its stated redeem window. Redeem windows may vary in frequency and duration. <mj-text-inline class="bold-text">Kohl’s Cash® coupons and other dollar-off discounts will be applied prior to percent-off total purchase discounts/coupons.</mj-text-inline> Kohl’s Cash® coupon may not be redeemed (1) on purchases of Kohl’s Cares® cause merchandise or other charitable items; (2) to purchase Gift Cards; (3) as price adjustments on prior purchases; (4) to reduce a Kohl’s Charge or any third-party charge account balance; or (5) to pay for any services or fees, including taxes and shipping. <mj-text-inline class="bold-text">If merchandise purchased earning a Kohl’s Cash® coupon is subsequently returned or price adjusted, the value of the Kohl’s Cash® previously earned and/or the amount of the merchandise refund will be reduced to reflect any unearned value. Return value of merchandise purchased with a Kohl’s Cash® coupon may be subject to adjustment.</mj-text-inline> Coupon is nontransferable. For details, terms, and to enroll in Kohl’s Rewards, visit kohls.com/kohlsrewards or see an associate. Kohl’s Charge is issued by Capital One, N.A. Subject to credit approval. Capital One is not a party to the Kohl’s Rewards Member Agreement.
+        </mj-text>
+
+
+        <mj-text font-size="10px" padding="15px 0 10px 0" align="left" color="#404040">
+          This mailbox is unattended, so please do not reply to this message. For other inquiries, visit <a href="#" class="decoration-reg">cs.kohls.com</a>, or write us at Kohl's, Attention: Customer Service, PO Box 3120, Milwaukee, WI 53201-3120.
+        </mj-text>
+
+        <mj-text font-size="10px" padding="15px 0 10px 0" align="left" color="#404040"><a href="#" class="decoration-reg">Find a Kohl's</a> near you!
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+
 
 
 
