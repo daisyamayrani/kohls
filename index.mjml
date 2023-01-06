@@ -167,7 +167,7 @@
       </mj-raw>
       <mj-section background-color="white" padding="30px 0 20px 0">
         <mj-column width="25%">
-          <mj-image src="assets/img/space.png" alt="" width="100px" padding="8px" align="left" border="none"></mj-image>
+          <mj-image src="https://i.postimg.cc/9fBDkmwq/space.png" alt="" width="100px" padding="8px" align="left" border="none"></mj-image>
         </mj-column>
         <mj-column width="35%">
           <mj-text font-size="13px" padding="0px" align="left" font-weight="bold">Space: From Near Earth Orbit to the Far Reaches of the Universe Book</mj-text>
@@ -193,7 +193,7 @@
       </mj-raw>
       <mj-section background-color="white" padding="10px 0 30px 0">
         <mj-column width="25%">
-          <mj-image src="assets/img/shoe.png" alt="" width="100px" padding="8px" align="left" border="none"></mj-image>
+          <mj-image src="https://i.postimg.cc/1zSgMnXQ/shoe.png" alt="" width="100px" padding="8px" align="left" border="none"></mj-image>
         </mj-column>
         <mj-column width="35%">
           <mj-text font-size="13px" padding="0px" align="left" font-weight="bold">New Balance DynaSoft Nergize v3 Women's Running Shoes</mj-text>
@@ -595,16 +595,16 @@
       </mj-raw>
       <mj-section padding="0" background-color="white">
         <mj-column padding="0">
-          <mj-image mj-class="logo" align="center" src="assets/img/sport.jpeg" />
+          <mj-image mj-class="logo" align="center" src="https://i.postimg.cc/tTCsQKFv/sport.jpg" />
         </mj-column>
         <mj-column padding="0">
-          <mj-image mj-class="logo" align="center" src="assets/img/caterpillar.jpeg" />
+          <mj-image mj-class="logo" align="center" src="https://i.postimg.cc/gJN6xzYP/caterpillar.jpg" />
         </mj-column>
         <mj-column padding="0">
-          <mj-image mj-class="logo" align="center" src="assets/img/running.jpeg" />
+          <mj-image mj-class="logo" align="center" src="https://i.postimg.cc/vZfgWLQh/running.jpg" />
         </mj-column>
         <mj-column padding="0">
-          <mj-image mj-class="logo" align="center" src="assets/img/unicorn.jpeg" />
+          <mj-image mj-class="logo" align="center" src="https://i.postimg.cc/gjxrr3Sv/unicorn.jpg" />
         </mj-column>
       </mj-section>
 
@@ -683,11 +683,11 @@
       <mj-section>
         <mj-column>
         <mj-social padding-top="20px">
-          <mj-social-element src="assets/img/fb.png" href="#"></mj-social-element>
-          <mj-social-element src="assets/img/tw.png" href="#"></mj-social-element>
-          <mj-social-element src="assets/img/pin.png" href="#"></mj-social-element>
-          <mj-social-element src="assets/img/ins.png" href="#"></mj-social-element>
-          <mj-social-element src="assets/img/you.png" href="#"></mj-social-element>
+          <mj-social-element src="https://i.postimg.cc/XqqBFRJB/fb.png" href="#"></mj-social-element>
+          <mj-social-element src="https://i.postimg.cc/4dLmJW5f/tw.png" href="#"></mj-social-element>
+          <mj-social-element src="https://i.postimg.cc/GhZT8S19/pin.png" href="#"></mj-social-element>
+          <mj-social-element src="https://i.postimg.cc/FFCLmHWy/ins.png" href="#"></mj-social-element>
+          <mj-social-element src="https://i.postimg.cc/kGLGSDzL/you.png" href="#"></mj-social-element>
         </mj-social>
       </mj-column>
       </mj-section>
@@ -701,10 +701,10 @@
           <mj-table padding="0px 0 0px 0" font-size="12px">
             <tr style="list-style: none;">
               <td>
-                <image  class="side-padding" width="150px" margin-left="50px;" align="right" src="assets/img/apple.jpg" />
+                <image  class="side-padding" width="150px" margin-left="50px;" align="right" src="https://i.postimg.cc/LXH14YFT/apple.jpg" />
               </td>
               <td>
-                <image class="side-padding"  width="150px" align="left" src="assets/img/google.jpg" />
+                <image class="side-padding"  width="150px" align="left" src="https://i.postimg.cc/T1sLctL7/google.jpg" />
               </td>
             </tr>
           </mj-table>

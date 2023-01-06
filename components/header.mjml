@@ -2,11 +2,11 @@
       <!-- Company Header -->
     </mj-raw>
     <mj-section background-color="#FFFFFF" padding="25px 0">
-      <mj-column >
-        <mj-image align="center" width="130px" padding="10px" href="#" src="assets/img/kohlsLogo.png"></mj-image>
+      <mj-column width="35%">
+        <mj-image align="center" width="130px" padding="10px" href="#" src="https://i.postimg.cc/PrL8qn9B/kohls-Logo.png"></mj-image>
       </mj-column>
 
-      <mj-column >
+      <mj-column width="65%">
         <mj-table align="center" padding="10px">
           <tr style="list-style: none;line-height:1; vertical-align: center; align:center;" padding="10px">
             <td align="center" width="50%">
