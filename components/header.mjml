@@ -1,0 +1,24 @@
+<mj-raw>
+      <!-- Company Header -->
+    </mj-raw>
+    <mj-section background-color="#FFFFFF" padding="25px 0">
+      <mj-column >
+        <mj-image align="center" width="130px" padding="10px" href="#" src="assets/img/kohlsLogo.png"></mj-image>
+      </mj-column>
+
+      <mj-column >
+        <mj-table align="center" padding="10px">
+          <tr style="list-style: none;line-height:1; vertical-align: center; align:center;" padding="10px">
+            <td align="center" width="50%">
+              <mj-text> <a href="#" style="color: #000000; text-decoration: none; padding: 0px;" align="center">MY ACCOUNT</a></mj-text>
+            </td>
+            <td align="center" width="50%">
+              <mj-text> <a href="#" style="color: #000000; text-decoration: none; padding: 0px;" align="center">CUSTOMER SERVICE</a></mj-text>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-include path="./light-divider.mjml" />
